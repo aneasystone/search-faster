@@ -6,10 +6,15 @@
   "content_scripts": [
     { "matches": ["http://*/*", "https://*/*"], "js": ["jquery.min.js", "content_script.js"] }
   ],
-  "page_action" :
-  {
-    "default_icon" : "google.png",
+  "page_action": {
+    "default_icon" : "icons/google.png",
     "default_title" : "It works!"
+  },
+  "icons": {
+  	"32": "icons/icon-32.png",
+  	"48": "icons/icon-48.png",  
+  	"64": "icons/icon-64.png",
+  	"128": "icons/icon-128.png" 
   },
   "permissions" : ["tabs"],
   "manifest_version": 2

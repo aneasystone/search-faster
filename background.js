@@ -23,7 +23,7 @@ function updateSelected(tabId) {
   if (selectedSearch)
     chrome.pageAction.setTitle({
         tabId:tabId, 
-        title:selectedSearch.keyword + "(" + selectedSearch.replace_cnt + ")"
+        title: "search-faster: " + selectedSearch.keyword + "(" + selectedSearch.replace_cnt + ")"
     });
 }
 
