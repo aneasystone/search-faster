@@ -1,0 +1,16 @@
+{
+  "name": "Search-faster",
+  "version": "1.0",
+  "description": "Replace the search engine redirect url to direct url when searching baidu, google, etc.",
+  "background": { "scripts": ["background.js"] },
+  "content_scripts": [
+    { "matches": ["http://*/*", "https://*/*"], "js": ["jquery.min.js", "content_script.js"] }
+  ],
+  "page_action" :
+  {
+    "default_icon" : "google.png",
+    "default_title" : "It works!"
+  },
+  "permissions" : ["tabs"],
+  "manifest_version": 2
+}
